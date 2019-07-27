@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Note edit page</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+        <h1 class="header__title">Note edit page</h1>
+        <h2 class="header__subtitle">Edit your notes</h2>
+    </div>
+  </div>
+  <div class="actions">
+    <div class="actions__container actions__container--spaced">
+      <a href="index.html">Home</a>
+      <span id="last-edited"></span>
+    </div>
+  </div>
+  <div class="container">
+    <input type="text" id="note-title" class="title-input" placeholder="Note title">
+    <textarea id="note-body" placeholder="Enter note text" class="body-input"></textarea>
+    <button id="remove-note" class="button button--secondary">Remove</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment-with-locales.min.js"></script>
+  <script src="scripts/notes-functions.js"></script>
+  <script src="scripts/notes-edit.js"></script>
+</body>
+</html>
